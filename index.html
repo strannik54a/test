@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сумма двух чисел</title>
+</head>
+<body style="background-color: silver">
+<h3> Программа вычисления суммы двух чисел </h3>
+<label>Введите первое число:</label>
+<input type = "number" id = "input1"><br><br>
+<label>Введите второе число:</label>
+<input type = "number"  id = "input2"><br><br>
+<label> Для вывода результата нажмите кнопку "OK"</label><br><br>
+<button style = "font-size: 16px; margin-left: 200px;"onclick="functionSum()">OK</button><br><br>
+<label style="margin-left: 100px" >Результат: </label>
+<input type="text" id = "result"><br><br>
+<div>
+	<img src="https://cdnn21.img.ria.ru/images/155602/07/1556020779_0:58:2001:1183_1920x0_80_0_0_de67af4cc9e95af7d41152119c758787.jpg" width="640px" >
+</div>
+
+<script>
+function functionSum() {
+	var x = document.getElementById("input1").value;
+	var y = document.getElementById("input2").value;
+	var sum = Number(x) + Number(y);
+	document.getElementById("result").value = sum;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
